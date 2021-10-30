@@ -1,7 +1,7 @@
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Books from './components/Books'
 import BookPage from './components/BookPage'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './App.css'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Route exact path="/book/:id" component={BookPage} />
       </>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
